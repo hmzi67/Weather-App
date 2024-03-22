@@ -1,0 +1,41 @@
+.bg-blur {
+    box-shadow: 0px 2px 4px 0px rgba(100, 100, 100, 0.15);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    font-family: helvetica;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ffffff; /* Assuming $white-color is equivalent to #ffffff */
+    border-left: 1px solid #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+    border: 3px solid #ffffff; /* Assuming $white-color is equivalent to #ffffff */
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%);
+}
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+    width: 12px;
+    height:  10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eee;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #eee;
+}
