@@ -118,6 +118,7 @@ export default function Home() {
 
   return (
     <div className="h-screen ">
+    
       <Navbar location={data?.city.name}  />
       <main className="bg-blur">
           {

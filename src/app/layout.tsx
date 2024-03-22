@@ -2,7 +2,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "./style.css"
-import { QueryClient, QueryClientProvider, useQuery } from 'react-query'
+import { QueryClient, QueryClientProvider } from 'react-query'
+import Head from "next/head";
 
 const queryClient = new QueryClient()
 
@@ -19,10 +20,12 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Weather App</title>
-        <link rel="icon" href="/favicon.ico" type="image/ico" sizes="48*48" />
+        
       </head>
       <QueryClientProvider client={queryClient}>
-        <body className={`bg-img ${inter.className}`}>{children}</body>
+        <body className={`bg-img ${inter.className}`}>
+          {children}
+        </body>
       </QueryClientProvider>
     </html>
   );
