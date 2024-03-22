@@ -17,6 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Weather App</title>
+        <link rel="icon" href="/favicon.ico" type="image/ico" sizes="48*48" />
+      </head>
       <QueryClientProvider client={queryClient}>
         <body className={`bg-img ${inter.className}`}>{children}</body>
       </QueryClientProvider>

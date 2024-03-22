@@ -229,6 +229,9 @@ export default function Home() {
             )
           }
       </main>
+      <footer className="flex justify-center bg-gray-200">
+          <p>&copy; {new Date().getFullYear()} Weather App. Code with ❤ by <a href="https://vercel.com/hmzi67" className="text-blue-600 hover:opacity-80">Hamza Waheed Abbasi</a></p>
+      </footer>
     </div>
   );
 }
